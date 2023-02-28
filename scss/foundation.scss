@@ -1,0 +1,163 @@
+// Подключение миксинов ===========================================================================================================================================================================================================================================================================
+@import "mixins.scss";
+
+/* Шрифты */
+
+//&display=swap - добавить при подключении через плагин
+
+//ПРИМЕР ПОДКЛЮЧЕНИЯ ШРИФТА (ПОМЕНЯТЬ ПУТЬ НА СВОЙ)
+@font-face {
+  font-family: "Montserrat";
+  src: local("☺"), url("../fonts/Montserrat-ExtraLight.woff") format("woff"),
+    url("../fonts/Montserrat-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"),
+    url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("☺"), url("../fonts/Montserrat-Italic.woff") format("woff"),
+    url("../fonts/Montserrat-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("☺"), url("../fonts/Montserrat-Medium.woff") format("woff"),
+    url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("☺"), url("../fonts/Montserrat-MediumItalic.woff") format("woff"),
+    url("../fonts/Montserrat-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("☺"), url("../fonts/Montserrat-SemiBold.woff") format("woff"),
+    url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"),
+    url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("☺"), url("../fonts/Montserrat-Black.woff") format("woff"),
+    url("../fonts/Montserrat-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: local("☺"), url("../fonts/Rubik-Light.woff") format("woff"),
+    url("../fonts/Rubik-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: local("☺"), url("../fonts/Rubik-Regular.woff") format("woff"),
+    url("../fonts/Rubik-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: local("☺"), url("../fonts/Rubik-Italic.woff") format("woff"),
+    url("../fonts/Rubik-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Rubik";
+  src: local("☺"), url("../fonts/Rubik-Medium.woff") format("woff"),
+    url("../fonts/Rubik-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: local("☺"), url("../fonts/Rubik-Bold.woff") format("woff"),
+    url("../fonts/Rubik-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: local("☺"), url("../fonts/Rubik-Black.woff") format("woff"),
+    url("../fonts/Rubik-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+$fontFamily: "Montserrat";
+$mainColor: #23283b;
+
+body {
+  font-family: $fontFamily;
+  color: $mainColor;
+  ::-moz-selection {
+    background: #4caf50;
+  }
+
+  ::selection {
+    background: #4caf50;
+  }
+}
+
+//<Контейнер>
+$minWidth: 320;
+$container: 1530;
+$maxWidth: 1920;
+$fontSize: 16px;
+._container {
+  max-width: $container + px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+body.lock {
+  // Скролл заблокирован
+  overflow: hidden;
+  touch-action: none;
+}
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  > main {
+    flex: 1 1 auto;
+  }
+  > * {
+    min-width: 0;
+  }
+}
+.page {
+  flex: 1 1 auto;
+}
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ SCSS>======================================================================
+@import "nullcss.scss";
+
+$tablet: 991.98px; // Планшеты, некоторые телефоны в горизонтальном положении
+$mobile: 767.98px; // Телефоны L
+$mobileSmall: 479.98px; // Телефоны S
+@import "header.scss";
+@import "main.scss";
+@import "footer.scss";
+@import "media.scss";

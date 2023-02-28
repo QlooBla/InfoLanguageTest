@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin-panel
+Disallow^ /*&
+Disallow: /www.infolanguage.ru
+Allow: /404.html

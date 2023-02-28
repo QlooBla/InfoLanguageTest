@@ -1,0 +1,137 @@
+.footer {
+  background-color: #23283b;
+  padding: 30px 0;
+  color: #ffffff;
+  position: relative;
+  z-index: 3;
+  font-family: "Rubik";
+  &__top {
+  }
+
+  &__inner {
+  }
+
+  &__bottom {
+  }
+}
+.top-footer {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0px 0px 30px 0px;
+  margin: 0px 0px 30px 0px;
+  &__container {
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+  }
+
+  &__info {
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    margin: 0px 0px 10px 0px;
+  }
+
+  &__subtitle {
+    line-height: 120%;
+  }
+
+  &__btn {
+    padding: 0 74px;
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: #23283b;
+        &::before {
+          width: 120%;
+        }
+      }
+    }
+    span {
+      transition: all 0.2s ease;
+      position: relative;
+      z-index: 3;
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: 0;
+      background-color: #fff;
+      height: 100%;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: -10%;
+      transform: skew(-20deg);
+      transition: width 0.3s ease;
+    }
+  }
+}
+.inner-footer {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0px 0px 30px 0px;
+  margin: 0px 0px 30px 0px;
+  &__container {
+  }
+
+  &__row {
+    display: flex;
+    gap: 90px;
+  }
+
+  &__navigation {
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+    @media (any-hover: hover) {
+      &:hover {
+        color: #d9504a;
+      }
+    }
+  }
+}
+.bottom-footer {
+  &__container {
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__logo {
+    img {
+      width: 297px;
+      height: 66px;
+      object-fit: cover;
+    }
+  }
+
+  &__copy {
+    font-size: 14px;
+    line-height: 120%;
+    p a {
+      text-decoration: underline;
+    }
+  }
+}

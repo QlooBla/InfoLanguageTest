@@ -1,0 +1,499 @@
+@media (max-width: 1700px) {
+  .hello__lines {
+    left: 100px;
+  }
+  .banner {
+    right: 70px;
+  }
+}
+@media (max-width: 1500px) {
+  .banner {
+    right: 20px;
+    max-width: 350px;
+  }
+}
+@media (max-width: 1400px) {
+  .header__logo {
+    img {
+      width: 230px;
+      height: 50px;
+    }
+  }
+  .header__row {
+    min-height: 90px;
+  }
+  .header {
+    &::before {
+      min-height: 90px;
+    }
+  }
+  .moving-text {
+    padding: 50px 0px 50px 0px;
+  }
+  .hello__lines {
+    left: 30px;
+  }
+}
+@media (max-width: 1300px) {
+  .menu-header {
+    gap: 20px;
+  }
+  .open-new__title {
+    font-size: 45px;
+    margin: 0px 0px 15px 0px;
+  }
+  .moving-text {
+    padding: 90px 0px 50px 0px;
+  }
+  .hello__lines {
+    display: none;
+  }
+  .all-courses__item {
+    flex: 0 1 23%;
+  }
+  .banner {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0 15px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+  }
+  .sub-over-body__items {
+    max-width: none;
+  }
+}
+@media (max-width: 1200px) {
+  .start {
+    padding: 110px 0px 70px 0px;
+  }
+  .form {
+    padding: 100px 0px 50px 0px;
+  }
+  .navigation-menu {
+    display: none;
+  }
+  .slider-start__info {
+    bottom: 42px;
+  }
+  .slider-start {
+    &__pagination.swiper-pagination {
+      bottom: 18px;
+    }
+  }
+  .advantages__row {
+    flex-wrap: wrap;
+  }
+  .advantages__item {
+    flex: 0 1 29.5%;
+  }
+  .over-course {
+    margin-top: 110px;
+  }
+}
+@media (max-width: 1100px) {
+  .open-new__row {
+    gap: 12px;
+  }
+  .slider-start__text {
+    font-size: 14px;
+  }
+  .slider-start__title {
+    font-size: 16px;
+  }
+  .open-new {
+    padding: 25px;
+  }
+  .open-new__title {
+    font-size: 38px;
+  }
+  .open-new__item {
+    padding: 0 18px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 1000px) {
+  .start__row {
+    flex-direction: column-reverse;
+  }
+  .start__open-new {
+    flex: 1 1 100%;
+  }
+  .slider-start {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+  .slider-start__body {
+    padding: 0px 0px 30% 0px;
+  }
+  .slider-start {
+    &__pagination.swiper-pagination {
+      .swiper-pagination-bullet {
+        height: 5px;
+      }
+    }
+  }
+  .directions__item {
+    flex: 0 1 48%;
+  }
+}
+@media (max-width: $tablet) {
+  .moving-text {
+    padding: 120px 0px 30px 0px;
+    img {
+      height: 30px;
+    }
+  }
+  .advantages__item {
+    flex: 0 1 46%;
+  }
+  .direction__slide.swiper-slide {
+    width: 40%;
+  }
+  .direction__image {
+    img {
+      width: 130px;
+      height: 130px;
+    }
+  }
+  .direction__top {
+    padding: 0 15px;
+  }
+  .reviews__slide.swiper-slide {
+    width: 62%;
+  }
+  .over-block__body {
+    padding: 15px 20px 20px 20px;
+  }
+  .all-courses__item {
+    flex: 0 1 31%;
+  }
+}
+@media (max-width: 800px) {
+  .moving-text {
+    padding: 140px 0px 30px 0px;
+  }
+  .direction__image {
+    img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  .direction__slide.swiper-slide {
+    width: 45%;
+  }
+  .reviews__slide.swiper-slide {
+    width: 75%;
+  }
+}
+@media (max-width: $mobile) {
+  .link-image {
+    display: block;
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .start {
+    padding: 95px 0px 65px 0px;
+  }
+  .over-course {
+    margin-top: 90px;
+  }
+  .link-none {
+    display: none;
+  }
+  .over-header {
+    padding: 100px 0px 0px 0px;
+  }
+  .slider-start__body {
+    padding: 0px 0px 50% 0px;
+  }
+  .open-new__row {
+    column-gap: 7px;
+    row-gap: 12px;
+  }
+  .direction__image {
+    display: none;
+  }
+  .direction__title-block {
+    width: 100%;
+    max-width: none;
+  }
+  .directions__row {
+    justify-content: space-between;
+  }
+  .directions__item {
+    flex: 0 1 47.5%;
+  }
+  .reviews-item__review {
+    flex: 0 1 100%;
+  }
+  .form__body {
+    flex-direction: column;
+  }
+  .form__image {
+    padding: 0px 0px 35% 0px;
+    img {
+      border-radius: 15px 15px 0 0;
+    }
+  }
+  .lesson-item__item {
+    flex: 0 1 48%;
+  }
+}
+@media (max-width: 700px) {
+  .open-new__title {
+    font-size: 34px;
+    min-height: 82px;
+  }
+  .directions__item {
+    flex: 0 1 100%;
+  }
+  .all-courses__item {
+    flex: 0 1 48%;
+  }
+}
+@media (max-width: 600px) {
+  .over-header__link {
+    font-size: 30px;
+  }
+  .over-header__linkk {
+    font-size: 14px;
+  }
+  .lesson-item__item {
+    flex: 0 1 47%;
+  }
+  .open-new__item {
+    padding: 0 13px;
+  }
+  .open-new__title {
+    min-height: 0;
+  }
+  .top-footer__row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .bottom-footer__row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .inner-footer__row {
+    gap: 30px;
+  }
+  .hello__infos {
+    padding: 0 15px;
+  }
+  .hello__btns {
+    flex-direction: column;
+  }
+  .moving-text {
+    padding: 90px 0px 30px 0px;
+  }
+  .direction__slide.swiper-slide {
+    width: 65%;
+  }
+  .reviews__info {
+    padding: 0px 0px 0px 0px;
+  }
+  .reviews__slide.swiper-slide {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .lesson-item__item {
+    flex: 0 100%;
+  }
+}
+@media (max-width: $mobileSmall) {
+  .header__logo {
+    img {
+      width: 160px;
+      height: 35px;
+    }
+  }
+  .over-header__link {
+    font-size: 24px;
+  }
+  .header__row {
+    min-height: 60px;
+  }
+  .header {
+    &::before {
+      min-height: 60px;
+    }
+  }
+  .start {
+    padding: 70px 0px 40px 0px;
+  }
+  .over-course {
+    margin-top: 70px;
+  }
+  .slider-start__body {
+    padding: 0px 0px 75% 0px;
+  }
+  .open-new__item {
+    font-size: 14px;
+    padding: 0 11px;
+  }
+  .open-new__title {
+    font-size: 26px;
+  }
+  .top-footer__title {
+    font-size: 18px;
+  }
+  .top-footer__subtitle {
+    font-size: 15px;
+  }
+  .border-btn {
+    min-height: 43px;
+    font-size: 19px;
+  }
+  .bottom-footer__logo {
+    img {
+      width: 270px;
+      height: 55px;
+    }
+  }
+  .hello__row {
+    flex-direction: column;
+  }
+  .hello {
+    padding-bottom: 150px;
+  }
+  .moving-text {
+    padding: 110px 0px 30px 0px;
+  }
+  .advantages__item {
+    flex: 0 1 100%;
+  }
+  .direction__slide.swiper-slide {
+    width: 85%;
+  }
+  .reviews__text {
+    font-size: 15px;
+    p {
+      margin: 0px 0px 13px 0px;
+    }
+  }
+  .reviews__name {
+    font-size: 17px;
+  }
+  .all-courses__item {
+    flex: 0 1 100%;
+  }
+  .all-courses__item-paginat {
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+  .inner-footer__row {
+    flex-direction: column;
+  }
+}
+@media (max-width: 417px) {
+  .moving-text {
+    padding: 90px 0px 30px 0px;
+  }
+}
+@media (max-width: 387px) {
+  .moving-text {
+    padding: 65px 0px 30px 0px;
+  }
+}
+@media (max-width: 375px) {
+  .moving-text {
+    padding: 40px 0px 30px 0px;
+  }
+  .direction__slide.swiper-slide {
+    width: 100%;
+  }
+  .all-courses__item-paginat {
+    padding: 8px 8px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 330px) {
+  .open-new__title {
+    font-size: 21px;
+  }
+  .slider-start__body {
+    padding: 0px 0px 100% 0px;
+  }
+  .hello {
+    padding-bottom: 70px;
+  }
+  .moving-text {
+    padding: 115px 0px 30px 0px;
+    img {
+      height: 30px;
+    }
+  }
+}
+
+// MIN-WIDTH
+@media (min-width: 1920px) {
+  .banner {
+    right: 210px;
+  }
+}
+@media (min-width: 2200px) {
+  .hello__content {
+    left: 150px;
+  }
+  .hello__lines {
+    left: 600px;
+  }
+  .banner {
+    right: 430px;
+  }
+}
+@media (min-width: 2500px) {
+  .hello__image {
+    img {
+      width: 1600px;
+      height: 900px;
+    }
+  }
+  .banner {
+    right: 550px;
+  }
+  .moving-text {
+    padding: 150px 0 50px 0;
+  }
+  .hello__lines {
+    left: 700px;
+  }
+}
+@media (min-width: 2700px) {
+  .banner {
+    right: 630px;
+  }
+}
+@media (min-width: 2900px) {
+  .hello__lines {
+    left: 850px;
+  }
+  .banner {
+    right: 730px;
+  }
+}
+@media (min-width: 3100px) {
+  .banner {
+    right: 830px;
+  }
+}
+@media (min-width: 3400px) {
+  .banner {
+    right: 930px;
+  }
+}
+@media (min-width: 3800px) {
+  .banner {
+    right: 1130px;
+  }
+}
+@media (min-width: 4200px) {
+  .banner {
+    right: 1330px;
+  }
+}
